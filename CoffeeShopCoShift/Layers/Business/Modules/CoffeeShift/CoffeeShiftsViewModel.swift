@@ -32,7 +32,8 @@ final class CoffeeShiftsViewModel {
       switch result {
       case .success(let coffeeShifts):
         guard let self = self, let shifts = coffeeShifts?.coffeeShifts else { return }
-        self.viewModels = shifts.compactMap(CoffeeShiftCellViewModel.init)
+        let sortedShifts = shifts.sorted { $0.startDate! > $1.startDate! }
+        self.viewModels = sortedShifts.compactMap(CoffeeShiftCellViewModel.init)
       case .failure(let error):
         print(error.localizedDescription)
       }

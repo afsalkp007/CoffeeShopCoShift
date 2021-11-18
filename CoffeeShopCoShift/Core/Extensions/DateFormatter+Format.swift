@@ -11,11 +11,15 @@ extension DateFormatter {
   private static var base = DateFormatter()
   
   static var serverDateTime: DateFormatter {
-    base.withFormat("yyyy-MM-dd HH:mm:ss -HH:mm")
+    base.withFormat("yyyy-MM-dd HH:mm:ss zzz")
   }
   
   static var monthDate: DateFormatter {
-    base.withFormat("EEE, M/dd")
+    base.withFormat("EEE, M/d")
+  }
+  
+  static var tweleveHour: DateFormatter {
+    base.withFormat("h a")
   }
   
   func withFormat(_ format: String) -> DateFormatter {

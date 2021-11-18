@@ -11,6 +11,7 @@ class CoffeeShiftCell: UITableViewCell {
   
   @IBOutlet weak var colorView: UIView!
   @IBOutlet weak var nameLabel: UILabel!
+  @IBOutlet weak var timeLabel: UILabel!
   override func awakeFromNib() {
     super.awakeFromNib()
     colorView.round()
