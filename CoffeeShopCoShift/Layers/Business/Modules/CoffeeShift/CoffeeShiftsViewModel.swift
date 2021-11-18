@@ -1,0 +1,49 @@
+//
+//  CoffeeShiftsViewModel.swift
+//  CoffeeShopCoShift
+//
+//  Created by Afsal Mohammed on 11/18/21.
+//
+
+import Foundation
+
+final class CoffeeShiftsViewModel {
+  
+  let coffeeShiftsService: CoffeeShiftsServiceProtocol
+  var updateUI: () -> Void = { }
+  var title = ""
+  
+  var viewModels = [CoffeeShiftCellViewModel]() {
+    didSet {
+      updateView()
+      updateUI()
+    }
+  }
+  
+  init(
+    coffeeShiftsService: CoffeeShiftsServiceProtocol = CoffeeShiftsService()
+  ) {
+    self.coffeeShiftsService = coffeeShiftsService
+    getShifts()
+  }
+  
+  func getShifts() {
+    coffeeShiftsService.fetchShifts { [weak self] result in
+      switch result {
+      case .success(let coffeeShifts):
+        guard let self = self, let shifts = coffeeShifts?.coffeeShifts else { return }
+        self.viewModels = shifts.compactMap(CoffeeShiftCellViewModel.init)
+      case .failure(let error):
+        print(error.localizedDescription)
+      }
+    }
+  }
+  
+  func updateView() {
+    title = "Coffee Co Shifts"
+  }
+  
+  func modelFor(indexPath: IndexPath) -> CoffeeShiftCellViewModel {
+    return viewModels[indexPath.row]
+  }
+}

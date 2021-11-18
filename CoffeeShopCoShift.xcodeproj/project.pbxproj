@@ -8,13 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		F48FE4952746AB6D00950EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4942746AB6D00950EBE /* AppDelegate.swift */; };
-		F48FE4972746AB6D00950EBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4962746AB6D00950EBE /* SceneDelegate.swift */; };
-		F48FE4992746AB6D00950EBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4982746AB6D00950EBE /* ViewController.swift */; };
 		F48FE49C2746AB6D00950EBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48FE49A2746AB6D00950EBE /* Main.storyboard */; };
 		F48FE49E2746AB6E00950EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48FE49D2746AB6E00950EBE /* Assets.xcassets */; };
 		F48FE4A12746AB6E00950EBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48FE49F2746AB6E00950EBE /* LaunchScreen.storyboard */; };
 		F48FE4AC2746AB6E00950EBE /* CoffeeShopCoShiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4AB2746AB6E00950EBE /* CoffeeShopCoShiftTests.swift */; };
 		F48FE4B72746AB6E00950EBE /* CoffeeShopCoShiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4B62746AB6E00950EBE /* CoffeeShopCoShiftUITests.swift */; };
+		F48FE4C62746ABDA00950EBE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4C52746ABDA00950EBE /* main.swift */; };
+		F48FE4C82746AC5700950EBE /* CoffeeShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4C72746AC5700950EBE /* CoffeeShiftViewController.swift */; };
+		F48FE4D52746AD3200950EBE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4D12746AD3200950EBE /* Storyboarded.swift */; };
+		F48FE4D62746AD3200950EBE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4D22746AD3200950EBE /* Coordinator.swift */; };
+		F48FE4DA2746AD9400950EBE /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4D92746AD9400950EBE /* UITableView+Ext.swift */; };
+		F48FE4DC2746AEA400950EBE /* CoffeeShiftCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4DB2746AEA400950EBE /* CoffeeShiftCoordinator.swift */; };
+		F48FE4DE2746B0E900950EBE /* shifts.json in Resources */ = {isa = PBXBuildFile; fileRef = F48FE4DD2746B0E900950EBE /* shifts.json */; };
+		F48FE4E72746B1DE00950EBE /* CoffeeShiftsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4E12746B1DE00950EBE /* CoffeeShiftsService.swift */; };
+		F48FE4E82746B1DE00950EBE /* CoffeeShifts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4E32746B1DE00950EBE /* CoffeeShifts.swift */; };
+		F48FE4E92746B1DE00950EBE /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4E42746B1DE00950EBE /* Shift.swift */; };
+		F48FE4EA2746B1DE00950EBE /* CoffeeShiftsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4E62746B1DE00950EBE /* CoffeeShiftsServiceProtocol.swift */; };
+		F48FE4EF2746B21100950EBE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4EC2746B21100950EBE /* NetworkService.swift */; };
+		F48FE4F02746B21100950EBE /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4ED2746B21100950EBE /* Resource.swift */; };
+		F48FE4F12746B21100950EBE /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4EE2746B21100950EBE /* Client.swift */; };
+		F48FE4F32746B2FA00950EBE /* KeyedDecodingContainer+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4F22746B2FA00950EBE /* KeyedDecodingContainer+Convenience.swift */; };
+		F48FE4F52746B54100950EBE /* DateFormatter+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4F42746B54100950EBE /* DateFormatter+Format.swift */; };
+		F48FE4F72746B5DC00950EBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4F62746B5DC00950EBE /* Constants.swift */; };
+		F48FE4F92746B6D400950EBE /* Constants+Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4F82746B6D400950EBE /* Constants+Urls.swift */; };
+		F48FE4FB2746BCCC00950EBE /* CoffeeShiftsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4FA2746BCCC00950EBE /* CoffeeShiftsViewModel.swift */; };
+		F48FE5002746BD4400950EBE /* CoffeeShiftCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4FF2746BD4400950EBE /* CoffeeShiftCellViewModel.swift */; };
+		F48FE5032746BEF100950EBE /* CoffeeShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE5012746BEF100950EBE /* CoffeeShiftCell.swift */; };
+		F48FE5042746BEF100950EBE /* CoffeeShiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48FE5022746BEF100950EBE /* CoffeeShiftCell.xib */; };
+		F48FE5072746C04200950EBE /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE5062746C04200950EBE /* Adapter.swift */; };
+		F48FE50B2746E2D700950EBE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE50A2746E2D700950EBE /* UIView+Ext.swift */; };
+		F48FE50D2746E38500950EBE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE50C2746E38500950EBE /* String+Ext.swift */; };
+		F48FE50F2746E47600950EBE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F48FE50E2746E47600950EBE /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +61,6 @@
 /* Begin PBXFileReference section */
 		F48FE4912746AB6D00950EBE /* CoffeeShopCoShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShopCoShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48FE4942746AB6D00950EBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F48FE4962746AB6D00950EBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F48FE4982746AB6D00950EBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F48FE49B2746AB6D00950EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F48FE49D2746AB6E00950EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F48FE4A02746AB6E00950EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +71,32 @@
 		F48FE4B22746AB6E00950EBE /* CoffeeShopCoShiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeShopCoShiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48FE4B62746AB6E00950EBE /* CoffeeShopCoShiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCoShiftUITests.swift; sourceTree = "<group>"; };
 		F48FE4B82746AB6E00950EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48FE4C52746ABDA00950EBE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F48FE4C72746AC5700950EBE /* CoffeeShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShiftViewController.swift; sourceTree = "<group>"; };
+		F48FE4D12746AD3200950EBE /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F48FE4D22746AD3200950EBE /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F48FE4D92746AD9400950EBE /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		F48FE4DB2746AEA400950EBE /* CoffeeShiftCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShiftCoordinator.swift; sourceTree = "<group>"; };
+		F48FE4DD2746B0E900950EBE /* shifts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shifts.json; sourceTree = "<group>"; };
+		F48FE4E12746B1DE00950EBE /* CoffeeShiftsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeShiftsService.swift; sourceTree = "<group>"; };
+		F48FE4E32746B1DE00950EBE /* CoffeeShifts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeShifts.swift; sourceTree = "<group>"; };
+		F48FE4E42746B1DE00950EBE /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		F48FE4E62746B1DE00950EBE /* CoffeeShiftsServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeShiftsServiceProtocol.swift; sourceTree = "<group>"; };
+		F48FE4EC2746B21100950EBE /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F48FE4ED2746B21100950EBE /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		F48FE4EE2746B21100950EBE /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		F48FE4F22746B2FA00950EBE /* KeyedDecodingContainer+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Convenience.swift"; sourceTree = "<group>"; };
+		F48FE4F42746B54100950EBE /* DateFormatter+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Format.swift"; sourceTree = "<group>"; };
+		F48FE4F62746B5DC00950EBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F48FE4F82746B6D400950EBE /* Constants+Urls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constants+Urls.swift"; sourceTree = "<group>"; };
+		F48FE4FA2746BCCC00950EBE /* CoffeeShiftsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShiftsViewModel.swift; sourceTree = "<group>"; };
+		F48FE4FF2746BD4400950EBE /* CoffeeShiftCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShiftCellViewModel.swift; sourceTree = "<group>"; };
+		F48FE5012746BEF100950EBE /* CoffeeShiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShiftCell.swift; sourceTree = "<group>"; };
+		F48FE5022746BEF100950EBE /* CoffeeShiftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShiftCell.xib; sourceTree = "<group>"; };
+		F48FE5062746C04200950EBE /* Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		F48FE50A2746E2D700950EBE /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		F48FE50C2746E38500950EBE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		F48FE50E2746E47600950EBE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +127,7 @@
 		F48FE4882746AB6D00950EBE = {
 			isa = PBXGroup;
 			children = (
+				F48FE4C42746AB9300950EBE /* Configuration */,
 				F48FE4932746AB6D00950EBE /* CoffeeShopCoShift */,
 				F48FE4AA2746AB6E00950EBE /* CoffeeShopCoShiftTests */,
 				F48FE4B52746AB6E00950EBE /* CoffeeShopCoShiftUITests */,
@@ -99,13 +148,13 @@
 		F48FE4932746AB6D00950EBE /* CoffeeShopCoShift */ = {
 			isa = PBXGroup;
 			children = (
+				F48FE4C52746ABDA00950EBE /* main.swift */,
 				F48FE4942746AB6D00950EBE /* AppDelegate.swift */,
-				F48FE4962746AB6D00950EBE /* SceneDelegate.swift */,
-				F48FE4982746AB6D00950EBE /* ViewController.swift */,
 				F48FE49A2746AB6D00950EBE /* Main.storyboard */,
-				F48FE49D2746AB6E00950EBE /* Assets.xcassets */,
 				F48FE49F2746AB6E00950EBE /* LaunchScreen.storyboard */,
-				F48FE4A22746AB6E00950EBE /* Info.plist */,
+				F48FE4CA2746AC9C00950EBE /* Layers */,
+				F48FE4CF2746ACFF00950EBE /* Core */,
+				F48FE4C92746AC9100950EBE /* Resources */,
 			);
 			path = CoffeeShopCoShift;
 			sourceTree = "<group>";
@@ -126,6 +175,173 @@
 				F48FE4B82746AB6E00950EBE /* Info.plist */,
 			);
 			path = CoffeeShopCoShiftUITests;
+			sourceTree = "<group>";
+		};
+		F48FE4C42746AB9300950EBE /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4A22746AB6E00950EBE /* Info.plist */,
+				F48FE50E2746E47600950EBE /* .gitignore */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F48FE4C92746AC9100950EBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4DD2746B0E900950EBE /* shifts.json */,
+				F48FE49D2746AB6E00950EBE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F48FE4CA2746AC9C00950EBE /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4FC2746BD0C00950EBE /* UI */,
+				F48FE4EB2746B21100950EBE /* Network */,
+				F48FE4DF2746B1C400950EBE /* Service */,
+				F48FE4CB2746ACAF00950EBE /* Business */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		F48FE4CB2746ACAF00950EBE /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4CC2746ACB200950EBE /* Modules */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		F48FE4CC2746ACB200950EBE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4CD2746ACCC00950EBE /* CoffeeShift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F48FE4CD2746ACCC00950EBE /* CoffeeShift */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4C72746AC5700950EBE /* CoffeeShiftViewController.swift */,
+				F48FE4DB2746AEA400950EBE /* CoffeeShiftCoordinator.swift */,
+				F48FE4FA2746BCCC00950EBE /* CoffeeShiftsViewModel.swift */,
+			);
+			path = CoffeeShift;
+			sourceTree = "<group>";
+		};
+		F48FE4CF2746ACFF00950EBE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4F62746B5DC00950EBE /* Constants.swift */,
+				F48FE5052746C04200950EBE /* Adapater */,
+				F48FE4D82746AD8B00950EBE /* Extensions */,
+				F48FE4D02746AD3200950EBE /* Coordinator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F48FE4D02746AD3200950EBE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4D12746AD3200950EBE /* Storyboarded.swift */,
+				F48FE4D22746AD3200950EBE /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F48FE4D82746AD8B00950EBE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4F22746B2FA00950EBE /* KeyedDecodingContainer+Convenience.swift */,
+				F48FE4D92746AD9400950EBE /* UITableView+Ext.swift */,
+				F48FE4F82746B6D400950EBE /* Constants+Urls.swift */,
+				F48FE4F42746B54100950EBE /* DateFormatter+Format.swift */,
+				F48FE50A2746E2D700950EBE /* UIView+Ext.swift */,
+				F48FE50C2746E38500950EBE /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F48FE4DF2746B1C400950EBE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4E02746B1DE00950EBE /* CoffeeShiftsService */,
+				F48FE4E22746B1DE00950EBE /* Model */,
+				F48FE4E52746B1DE00950EBE /* Protocol */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F48FE4E02746B1DE00950EBE /* CoffeeShiftsService */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4E12746B1DE00950EBE /* CoffeeShiftsService.swift */,
+			);
+			path = CoffeeShiftsService;
+			sourceTree = "<group>";
+		};
+		F48FE4E22746B1DE00950EBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4E32746B1DE00950EBE /* CoffeeShifts.swift */,
+				F48FE4E42746B1DE00950EBE /* Shift.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F48FE4E52746B1DE00950EBE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4E62746B1DE00950EBE /* CoffeeShiftsServiceProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F48FE4EB2746B21100950EBE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4EC2746B21100950EBE /* NetworkService.swift */,
+				F48FE4ED2746B21100950EBE /* Resource.swift */,
+				F48FE4EE2746B21100950EBE /* Client.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F48FE4FC2746BD0C00950EBE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4FD2746BD0E00950EBE /* Cells */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F48FE4FD2746BD0E00950EBE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4FE2746BD1800950EBE /* CoffeeShiftCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F48FE4FE2746BD1800950EBE /* CoffeeShiftCell */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE4FF2746BD4400950EBE /* CoffeeShiftCellViewModel.swift */,
+				F48FE5012746BEF100950EBE /* CoffeeShiftCell.swift */,
+				F48FE5022746BEF100950EBE /* CoffeeShiftCell.xib */,
+			);
+			path = CoffeeShiftCell;
+			sourceTree = "<group>";
+		};
+		F48FE5052746C04200950EBE /* Adapater */ = {
+			isa = PBXGroup;
+			children = (
+				F48FE5062746C04200950EBE /* Adapter.swift */,
+			);
+			path = Adapater;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +447,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48FE4DE2746B0E900950EBE /* shifts.json in Resources */,
 				F48FE4A12746AB6E00950EBE /* LaunchScreen.storyboard in Resources */,
 				F48FE49E2746AB6E00950EBE /* Assets.xcassets in Resources */,
+				F48FE5042746BEF100950EBE /* CoffeeShiftCell.xib in Resources */,
+				F48FE50F2746E47600950EBE /* .gitignore in Resources */,
 				F48FE49C2746AB6D00950EBE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +477,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48FE4992746AB6D00950EBE /* ViewController.swift in Sources */,
 				F48FE4952746AB6D00950EBE /* AppDelegate.swift in Sources */,
-				F48FE4972746AB6D00950EBE /* SceneDelegate.swift in Sources */,
+				F48FE4FB2746BCCC00950EBE /* CoffeeShiftsViewModel.swift in Sources */,
+				F48FE4DC2746AEA400950EBE /* CoffeeShiftCoordinator.swift in Sources */,
+				F48FE5002746BD4400950EBE /* CoffeeShiftCellViewModel.swift in Sources */,
+				F48FE4E72746B1DE00950EBE /* CoffeeShiftsService.swift in Sources */,
+				F48FE4EA2746B1DE00950EBE /* CoffeeShiftsServiceProtocol.swift in Sources */,
+				F48FE50D2746E38500950EBE /* String+Ext.swift in Sources */,
+				F48FE4E82746B1DE00950EBE /* CoffeeShifts.swift in Sources */,
+				F48FE4E92746B1DE00950EBE /* Shift.swift in Sources */,
+				F48FE4C82746AC5700950EBE /* CoffeeShiftViewController.swift in Sources */,
+				F48FE4F12746B21100950EBE /* Client.swift in Sources */,
+				F48FE4D62746AD3200950EBE /* Coordinator.swift in Sources */,
+				F48FE5032746BEF100950EBE /* CoffeeShiftCell.swift in Sources */,
+				F48FE50B2746E2D700950EBE /* UIView+Ext.swift in Sources */,
+				F48FE4DA2746AD9400950EBE /* UITableView+Ext.swift in Sources */,
+				F48FE4C62746ABDA00950EBE /* main.swift in Sources */,
+				F48FE4EF2746B21100950EBE /* NetworkService.swift in Sources */,
+				F48FE4F52746B54100950EBE /* DateFormatter+Format.swift in Sources */,
+				F48FE4F32746B2FA00950EBE /* KeyedDecodingContainer+Convenience.swift in Sources */,
+				F48FE5072746C04200950EBE /* Adapter.swift in Sources */,
+				F48FE4D52746AD3200950EBE /* Storyboarded.swift in Sources */,
+				F48FE4F02746B21100950EBE /* Resource.swift in Sources */,
+				F48FE4F92746B6D400950EBE /* Constants+Urls.swift in Sources */,
+				F48FE4F72746B5DC00950EBE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +677,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CoffeeShopCoShift/Info.plist;
+				INFOPLIST_FILE = Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CoffeeShopCoShift/Info.plist;
+				INFOPLIST_FILE = Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
