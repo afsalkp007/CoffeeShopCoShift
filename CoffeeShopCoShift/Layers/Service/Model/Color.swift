@@ -21,16 +21,20 @@ enum Color: String, Codable, CaseIterable {
     case .white: return .white
     }
   }
+  
+  var capitalized: String {
+    rawValue.capitalized
+  }
 }
 
 extension String {
   var color: Color {
     switch self {
-    case "red":
+    case "Red":
       return .red
-    case "blue":
+    case "Blue":
       return .blue
-    case "green":
+    case "Green":
       return .green
     default:
       return .white

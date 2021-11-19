@@ -18,10 +18,6 @@ class CoffeeShiftViewController: UIViewController, Storyboarded, UpdateViewProto
     super.viewDidLoad()
     tableView.register(cellType: CoffeeShiftCell.self)
     navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Shift", style: .done, target: self, action: #selector(addShift))
-    updateView(viewModel!)
-  }
-  
-  func updateView(_ model: CoffeeShiftsViewModel) {
     viewModel?.updateUI = { [weak self] in
       guard let self = self, let viewModel = self.viewModel else { return }
       self.title = viewModel.title
@@ -30,8 +26,17 @@ class CoffeeShiftViewController: UIViewController, Storyboarded, UpdateViewProto
     }
   }
   
+  func updateView(_ items: [CoffeeShiftCellViewModel]) {
+    self.adapter.items = items
+    self.configureTableView()
+  }
+  
   @objc func addShift() {
-    coordinator?.start()
+    let vc = CreateShiftViewController.instantiate()
+    vc.delegate = self
+    vc.adapter = adapter
+    vc.viewModel = CreateShiftViewModel()
+    navigationController?.pushViewController(vc, animated: true)
   }
   
   private func configureTableView() {

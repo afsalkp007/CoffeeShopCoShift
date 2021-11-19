@@ -7,7 +7,10 @@
 
 import Foundation
 
-final class CreateShiftViewModel {
+struct CreateShiftViewModel {
   
   var title = "Create a Shift"
+  
+  var startDate: Date?
+  var endDate: Date?
 }

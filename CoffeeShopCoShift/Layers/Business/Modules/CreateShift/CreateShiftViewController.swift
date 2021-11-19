@@ -8,11 +8,12 @@
 import UIKit
 
 protocol UpdateViewProtocol {
-  func updateView(_ model: CoffeeShiftsViewModel)
+  func updateView(_ items: [CoffeeShiftCellViewModel])
 }
 
 class CreateShiftViewController: UIViewController, Storyboarded {
   
+  var adapter: Adapter<CoffeeShiftCellViewModel, CoffeeShiftCell>?
   var viewModel: CreateShiftViewModel?
   var coffeeShiftViewModel = CoffeeShiftsViewModel()
   var delegate: UpdateViewProtocol?
@@ -21,9 +22,6 @@ class CreateShiftViewController: UIViewController, Storyboarded {
   @IBOutlet weak var empolyeeLabel: UILabel!
   @IBOutlet weak var roleLabel: UILabel!
   @IBOutlet weak var colorLabel: UILabel!
-  
-  var startDate: Date?
-  var endDate: Date?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -44,24 +42,32 @@ class CreateShiftViewController: UIViewController, Storyboarded {
   
   @objc
   func save() {
-    guard let role = roleLabel.text,
-          let name = empolyeeLabel.text,
-          let color = colorLabel.text else { return }
-    coffeeShiftViewModel.viewModels.append(CoffeeShiftCellViewModel(name: name, color: color.color, time: ""))
-    delegate?.updateView(coffeeShiftViewModel)
+    updateDataSource()
     navigationController?.popViewController(animated: true)
+  }
+  
+  private func updateDataSource() {
+    guard let sRole = roleLabel.text,
+          let sName = empolyeeLabel.text,
+          let sColor = colorLabel.text else { return }
+    let dayMonth = DateFormatter.monthDate.string(from: viewModel?.startDate ?? Date())
+    let start = DateFormatter.tweleveHour.string(from: viewModel?.startDate ?? Date())
+    let end = DateFormatter.tweleveHour.string(from: viewModel?.endDate ?? Date())
+    let name = "\(sName) (\(sRole)) \(dayMonth)"
+    let time = "\(start)-\(end)"
+    guard let adapter = adapter else { return }
+    adapter.items.insert(CoffeeShiftCellViewModel(name: name, color: sColor.color, time: time), at: 0)
+    delegate?.updateView(adapter.items)
   }
   
   @objc
   func startDate(_ sender: UIDatePicker) {
-    startDate = sender.date
-    print(DateFormatter.displayDateTime.string(from: sender.date))
+    viewModel?.startDate = sender.date
   }
   
   @objc
   func endDate(_ sender: UIDatePicker) {
-    endDate = sender.date
-    print(DateFormatter.displayDateTime.string(from: sender.date))
+    viewModel?.endDate = sender.date
   }
   
   @objc

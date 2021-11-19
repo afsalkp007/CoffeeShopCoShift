@@ -12,7 +12,7 @@ extension UIViewController {
     let alert = UIAlertController(title: title, message: "", preferredStyle: .actionSheet)
     Color.allCases.forEach { color in
       alert.addAction(UIAlertAction(title: color.rawValue, style: .default) {  _ in
-        label.text = color.rawValue
+        label.text = color.capitalized
       })
     }
     
