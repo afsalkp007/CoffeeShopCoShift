@@ -47,6 +47,9 @@ class CreateShiftViewController: UIViewController, Storyboarded {
   }
   
   private func updateDataSource() {
+    guard empolyeeLabel.text != "Select Employee" &&
+          roleLabel.text != "Select Role" &&
+          roleLabel.text != "Select Color" else { return }
     guard let sRole = roleLabel.text,
           let sName = empolyeeLabel.text,
           let sColor = colorLabel.text else { return }
@@ -72,29 +75,17 @@ class CreateShiftViewController: UIViewController, Storyboarded {
   
   @objc
   func selectColor() {
-    showColors()
+    createColorPopUp(with: "Select Color", label: colorLabel)
   }
   
   @objc
   func selectRole() {
-    showRoles()
+    createRolePopUp(with: "Select Role", label: roleLabel)
   }
   
   @objc
   func selectEmployee() {
-    showEmployess()
-  }
-  
-  private func showEmployess() {
     createEmployeePopUp(with: "Select Employee", label: empolyeeLabel)
-  }
-  
-  private func showRoles() {
-    createRolePopUp(with: "Select Role", label: roleLabel)
-  }
-  
-  private func showColors() {
-    createColorPopUp(with: "Select Color", label: colorLabel)
   }
 }
 
