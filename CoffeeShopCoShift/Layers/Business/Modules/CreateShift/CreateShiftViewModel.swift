@@ -9,4 +9,5 @@ import Foundation
 
 final class CreateShiftViewModel {
   
+  var title = "Create a Shift"
 }

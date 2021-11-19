@@ -14,6 +14,10 @@ extension DateFormatter {
     base.withFormat("yyyy-MM-dd HH:mm:ss zzz")
   }
   
+  static var displayDateTime: DateFormatter {
+    base.withFormat("dd-MM-yyyy HH:mm:ss aaa")
+  }
+  
   static var monthDate: DateFormatter {
     base.withFormat("EEE, M/d")
   }

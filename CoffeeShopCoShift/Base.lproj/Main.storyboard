@@ -45,13 +45,48 @@
                     <view key="view" contentMode="scaleToFill" id="sSf-m7-w1p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-mn-r6D">
+                                <rect key="frame" x="20" y="64" width="374" height="244"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aG-6P-JiB">
+                                        <rect key="frame" x="12" y="12" width="76" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-K1-kGT">
+                                        <rect key="frame" x="12" y="67" width="350" height="55"/>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za2-cM-LDm">
+                                        <rect key="frame" x="12" y="122" width="67.5" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Ays-1E-Gal">
+                                        <rect key="frame" x="12" y="177" width="350" height="55"/>
+                                    </datePicker>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="12" left="12" bottom="12" right="12"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aGc-kr-xmR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aGc-kr-xmR" firstAttribute="trailing" secondItem="3GO-mn-r6D" secondAttribute="trailing" constant="20" id="VQA-58-hZ9"/>
+                            <constraint firstItem="3GO-mn-r6D" firstAttribute="top" secondItem="aGc-kr-xmR" secondAttribute="top" constant="20" id="Z4D-Fo-KF9"/>
+                            <constraint firstItem="3GO-mn-r6D" firstAttribute="leading" secondItem="sSf-m7-w1p" secondAttribute="leading" constant="20" id="hNs-QP-5bq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="endDatePicker" destination="Ays-1E-Gal" id="JQM-Pd-9WO"/>
+                        <outlet property="startDatePicker" destination="jYH-K1-kGT" id="fGD-oN-dyI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diA-vM-YUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="48"/>
+            <point key="canvasLocation" x="808.69565217391312" y="47.544642857142854"/>
         </scene>
     </scenes>
     <resources>
