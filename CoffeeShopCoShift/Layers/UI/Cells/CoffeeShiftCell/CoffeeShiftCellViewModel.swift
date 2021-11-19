@@ -9,7 +9,7 @@ import Foundation
 
 struct CoffeeShiftCellViewModel {
   var name: String
-  var color: String
+  var color: Color
   var time: String
   
   init(shift: Shift) {

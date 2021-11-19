@@ -9,7 +9,7 @@ import UIKit
 
 extension UIView {
   func round() {
-    layer.cornerRadius = frame.height / 2
+    layer.cornerRadius = 10
     layer.masksToBounds = true
     layer.borderColor = UIColor.black.cgColor
     layer.borderWidth = 1.0

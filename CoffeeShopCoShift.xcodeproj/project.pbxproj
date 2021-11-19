@@ -37,7 +37,7 @@
 		F48FE5042746BEF100950EBE /* CoffeeShiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48FE5022746BEF100950EBE /* CoffeeShiftCell.xib */; };
 		F48FE5072746C04200950EBE /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE5062746C04200950EBE /* Adapter.swift */; };
 		F48FE50B2746E2D700950EBE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE50A2746E2D700950EBE /* UIView+Ext.swift */; };
-		F48FE50D2746E38500950EBE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE50C2746E38500950EBE /* String+Ext.swift */; };
+		F48FE50D2746E38500950EBE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE50C2746E38500950EBE /* Color.swift */; };
 		F48FE50F2746E47600950EBE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F48FE50E2746E47600950EBE /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +95,7 @@
 		F48FE5022746BEF100950EBE /* CoffeeShiftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShiftCell.xib; sourceTree = "<group>"; };
 		F48FE5062746C04200950EBE /* Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		F48FE50A2746E2D700950EBE /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
-		F48FE50C2746E38500950EBE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		F48FE50C2746E38500950EBE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F48FE50E2746E47600950EBE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				F48FE4F62746B5DC00950EBE /* Constants.swift */,
+				F48FE50C2746E38500950EBE /* Color.swift */,
 				F48FE5052746C04200950EBE /* Adapater */,
 				F48FE4D82746AD8B00950EBE /* Extensions */,
 				F48FE4D02746AD3200950EBE /* Coordinator */,
@@ -260,7 +261,6 @@
 				F48FE4F82746B6D400950EBE /* Constants+Urls.swift */,
 				F48FE4F42746B54100950EBE /* DateFormatter+Format.swift */,
 				F48FE50A2746E2D700950EBE /* UIView+Ext.swift */,
-				F48FE50C2746E38500950EBE /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -483,7 +483,7 @@
 				F48FE5002746BD4400950EBE /* CoffeeShiftCellViewModel.swift in Sources */,
 				F48FE4E72746B1DE00950EBE /* CoffeeShiftsService.swift in Sources */,
 				F48FE4EA2746B1DE00950EBE /* CoffeeShiftsServiceProtocol.swift in Sources */,
-				F48FE50D2746E38500950EBE /* String+Ext.swift in Sources */,
+				F48FE50D2746E38500950EBE /* Color.swift in Sources */,
 				F48FE4E82746B1DE00950EBE /* CoffeeShifts.swift in Sources */,
 				F48FE4E92746B1DE00950EBE /* Shift.swift in Sources */,
 				F48FE4C82746AC5700950EBE /* CoffeeShiftViewController.swift in Sources */,

@@ -36,7 +36,7 @@ class CoffeeShiftViewController: UIViewController, Storyboarded {
     adapter.configure = { item, cell in
       cell.nameLabel.text = item.name
       cell.timeLabel.text = item.time
-      cell.colorView.backgroundColor = item.color.color
+      cell.colorView.backgroundColor = item.color.value
     }
   }
 }

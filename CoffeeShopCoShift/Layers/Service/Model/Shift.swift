@@ -12,7 +12,7 @@ struct Shift {
   var name: String
   var startDate: Date?
   var endDate: Date?
-  var color: String
+  var color: Color
 }
 
 extension Shift: Codable {
