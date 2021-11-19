@@ -16,6 +16,7 @@ final class CoffeeShiftCoordinator: Coordinator {
   
   func start() {
     let vc = CoffeeShiftViewController.instantiate()
+    vc.coordinator = CreateShiftCoordinator(navigationController: navigationController)
     vc.viewModel = CoffeeShiftsViewModel()
     navigationController.pushViewController(vc, animated: false)
   }

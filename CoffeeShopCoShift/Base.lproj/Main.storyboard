@@ -38,6 +38,21 @@
             </objects>
             <point key="canvasLocation" x="121.73913043478262" y="104.46428571428571"/>
         </scene>
+        <!--Create Shift View Controller-->
+        <scene sceneID="uYH-58-TT5">
+            <objects>
+                <viewController storyboardIdentifier="CreateShiftViewController" id="g1A-vO-Mjj" customClass="CreateShiftViewController" customModule="CoffeeShopCoShift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sSf-m7-w1p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aGc-kr-xmR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diA-vM-YUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="48"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
