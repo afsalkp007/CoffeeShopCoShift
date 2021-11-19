@@ -20,4 +20,10 @@ struct CoffeeShiftCellViewModel {
     self.color = shift.color
     self.time = "\(start)-\(end)"
   }
+  
+  init(name: String, color: Color, time: String) {
+    self.name = name
+    self.color = color
+    self.time = time
+  }
 }

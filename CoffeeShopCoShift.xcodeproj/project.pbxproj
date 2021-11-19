@@ -42,6 +42,9 @@
 		F48FE51227476ECF00950EBE /* CreateShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE51127476ECF00950EBE /* CreateShiftViewController.swift */; };
 		F48FE51427476F0A00950EBE /* CreateShiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE51327476F0900950EBE /* CreateShiftViewModel.swift */; };
 		F48FE51627476F4000950EBE /* CreateShiftCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE51527476F4000950EBE /* CreateShiftCoordinator.swift */; };
+		F48FE5182747A50900950EBE /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE5172747A50900950EBE /* Employee.swift */; };
+		F48FE51A2747A51500950EBE /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE5192747A51500950EBE /* Role.swift */; };
+		F48FE51C2747A72400950EBE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE51B2747A72400950EBE /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,9 @@
 		F48FE51127476ECF00950EBE /* CreateShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShiftViewController.swift; sourceTree = "<group>"; };
 		F48FE51327476F0900950EBE /* CreateShiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShiftViewModel.swift; sourceTree = "<group>"; };
 		F48FE51527476F4000950EBE /* CreateShiftCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShiftCoordinator.swift; sourceTree = "<group>"; };
+		F48FE5172747A50900950EBE /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		F48FE5192747A51500950EBE /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		F48FE51B2747A72400950EBE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				F48FE4F62746B5DC00950EBE /* Constants.swift */,
-				F48FE50C2746E38500950EBE /* Color.swift */,
 				F48FE5052746C04200950EBE /* Adapater */,
 				F48FE4D82746AD8B00950EBE /* Extensions */,
 				F48FE4D02746AD3200950EBE /* Coordinator */,
@@ -268,6 +273,7 @@
 				F48FE4F82746B6D400950EBE /* Constants+Urls.swift */,
 				F48FE4F42746B54100950EBE /* DateFormatter+Format.swift */,
 				F48FE50A2746E2D700950EBE /* UIView+Ext.swift */,
+				F48FE51B2747A72400950EBE /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -295,6 +301,9 @@
 			children = (
 				F48FE4E32746B1DE00950EBE /* CoffeeShifts.swift */,
 				F48FE4E42746B1DE00950EBE /* Shift.swift */,
+				F48FE5172747A50900950EBE /* Employee.swift */,
+				F48FE5192747A51500950EBE /* Role.swift */,
+				F48FE50C2746E38500950EBE /* Color.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,6 +505,7 @@
 			files = (
 				F48FE4952746AB6D00950EBE /* AppDelegate.swift in Sources */,
 				F48FE4FB2746BCCC00950EBE /* CoffeeShiftsViewModel.swift in Sources */,
+				F48FE51C2747A72400950EBE /* UIViewController+Ext.swift in Sources */,
 				F48FE4DC2746AEA400950EBE /* CoffeeShiftCoordinator.swift in Sources */,
 				F48FE5002746BD4400950EBE /* CoffeeShiftCellViewModel.swift in Sources */,
 				F48FE4E72746B1DE00950EBE /* CoffeeShiftsService.swift in Sources */,
@@ -511,6 +521,7 @@
 				F48FE50B2746E2D700950EBE /* UIView+Ext.swift in Sources */,
 				F48FE4DA2746AD9400950EBE /* UITableView+Ext.swift in Sources */,
 				F48FE4C62746ABDA00950EBE /* main.swift in Sources */,
+				F48FE5182747A50900950EBE /* Employee.swift in Sources */,
 				F48FE4EF2746B21100950EBE /* NetworkService.swift in Sources */,
 				F48FE4F52746B54100950EBE /* DateFormatter+Format.swift in Sources */,
 				F48FE4F32746B2FA00950EBE /* KeyedDecodingContainer+Convenience.swift in Sources */,
@@ -519,6 +530,7 @@
 				F48FE4D52746AD3200950EBE /* Storyboarded.swift in Sources */,
 				F48FE4F02746B21100950EBE /* Resource.swift in Sources */,
 				F48FE51627476F4000950EBE /* CreateShiftCoordinator.swift in Sources */,
+				F48FE51A2747A51500950EBE /* Role.swift in Sources */,
 				F48FE4F92746B6D400950EBE /* Constants+Urls.swift in Sources */,
 				F48FE4F72746B5DC00950EBE /* Constants.swift in Sources */,
 			);

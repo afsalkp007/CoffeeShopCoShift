@@ -11,11 +11,10 @@ final class CoffeeShiftsViewModel {
   
   let coffeeShiftsService: CoffeeShiftsServiceProtocol
   var updateUI: () -> Void = { }
-  var title = ""
+  var title = "Coffee Co Shifts"
   
   var viewModels = [CoffeeShiftCellViewModel]() {
     didSet {
-      updateView()
       updateUI()
     }
   }
@@ -38,10 +37,6 @@ final class CoffeeShiftsViewModel {
         print(error.localizedDescription)
       }
     }
-  }
-  
-  func updateView() {
-    title = "Coffee Co Shifts"
   }
   
   func modelFor(indexPath: IndexPath) -> CoffeeShiftCellViewModel {
