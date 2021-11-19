@@ -11,7 +11,6 @@
 		F48FE49C2746AB6D00950EBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48FE49A2746AB6D00950EBE /* Main.storyboard */; };
 		F48FE49E2746AB6E00950EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48FE49D2746AB6E00950EBE /* Assets.xcassets */; };
 		F48FE4A12746AB6E00950EBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48FE49F2746AB6E00950EBE /* LaunchScreen.storyboard */; };
-		F48FE4AC2746AB6E00950EBE /* CoffeeShopCoShiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4AB2746AB6E00950EBE /* CoffeeShopCoShiftTests.swift */; };
 		F48FE4B72746AB6E00950EBE /* CoffeeShopCoShiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4B62746AB6E00950EBE /* CoffeeShopCoShiftUITests.swift */; };
 		F48FE4C62746ABDA00950EBE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4C52746ABDA00950EBE /* main.swift */; };
 		F48FE4C82746AC5700950EBE /* CoffeeShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE4C72746AC5700950EBE /* CoffeeShiftViewController.swift */; };
@@ -45,6 +44,7 @@
 		F48FE5182747A50900950EBE /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE5172747A50900950EBE /* Employee.swift */; };
 		F48FE51A2747A51500950EBE /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE5192747A51500950EBE /* Role.swift */; };
 		F48FE51C2747A72400950EBE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE51B2747A72400950EBE /* UIViewController+Ext.swift */; };
+		F48FE51E2747F1DF00950EBE /* CoffeeShiftDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FE51D2747F1DF00950EBE /* CoffeeShiftDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +72,6 @@
 		F48FE4A02746AB6E00950EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F48FE4A22746AB6E00950EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F48FE4A72746AB6E00950EBE /* CoffeeShopCoShiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeShopCoShiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F48FE4AB2746AB6E00950EBE /* CoffeeShopCoShiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCoShiftTests.swift; sourceTree = "<group>"; };
 		F48FE4AD2746AB6E00950EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F48FE4B22746AB6E00950EBE /* CoffeeShopCoShiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeShopCoShiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48FE4B62746AB6E00950EBE /* CoffeeShopCoShiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCoShiftUITests.swift; sourceTree = "<group>"; };
@@ -109,6 +108,7 @@
 		F48FE5172747A50900950EBE /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		F48FE5192747A51500950EBE /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		F48FE51B2747A72400950EBE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		F48FE51D2747F1DF00950EBE /* CoffeeShiftDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShiftDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +174,7 @@
 		F48FE4AA2746AB6E00950EBE /* CoffeeShopCoShiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				F48FE4AB2746AB6E00950EBE /* CoffeeShopCoShiftTests.swift */,
+				F48FE51D2747F1DF00950EBE /* CoffeeShiftDataService.swift */,
 				F48FE4AD2746AB6E00950EBE /* Info.plist */,
 			);
 			path = CoffeeShopCoShiftTests;
@@ -440,6 +440,7 @@
 					};
 					F48FE4A62746AB6E00950EBE = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = F48FE4902746AB6D00950EBE;
 					};
 					F48FE4B12746AB6E00950EBE = {
@@ -540,7 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48FE4AC2746AB6E00950EBE /* CoffeeShopCoShiftTests.swift in Sources */,
+				F48FE51E2747F1DF00950EBE /* CoffeeShiftDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +711,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -728,6 +730,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -744,6 +747,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoffeeShopCoShiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -754,6 +758,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.CoffeeShopCoShiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeShopCoShift.app/CoffeeShopCoShift";
@@ -765,6 +770,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoffeeShopCoShiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
