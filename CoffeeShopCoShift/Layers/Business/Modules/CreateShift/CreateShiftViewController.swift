@@ -8,7 +8,7 @@
 import UIKit
 
 protocol UpdateViewProtocol {
-  func updateView()
+  func updateView(_ model: CoffeeShiftsViewModel)
 }
 
 class CreateShiftViewController: UIViewController, Storyboarded {
@@ -48,7 +48,7 @@ class CreateShiftViewController: UIViewController, Storyboarded {
           let name = empolyeeLabel.text,
           let color = colorLabel.text else { return }
     coffeeShiftViewModel.viewModels.append(CoffeeShiftCellViewModel(name: name, color: color.color, time: ""))
-    delegate?.updateView()
+    delegate?.updateView(coffeeShiftViewModel)
     navigationController?.popViewController(animated: true)
   }
   

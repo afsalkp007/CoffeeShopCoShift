@@ -9,6 +9,7 @@ import UIKit
 
 final class CreateShiftCoordinator: Coordinator {
   var navigationController: UINavigationController
+  let coffeeShiftViewController = CoffeeShiftViewController()
   
   init(navigationController: UINavigationController) {
     self.navigationController = navigationController
@@ -16,6 +17,7 @@ final class CreateShiftCoordinator: Coordinator {
   
   func start() {
     let vc = CreateShiftViewController.instantiate()
+    vc.delegate = coffeeShiftViewController
     vc.viewModel = CreateShiftViewModel()
     navigationController.pushViewController(vc, animated: true)
   }

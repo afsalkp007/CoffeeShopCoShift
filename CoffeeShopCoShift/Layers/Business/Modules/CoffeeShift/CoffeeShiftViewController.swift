@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CoffeeShiftViewController: UIViewController, Storyboarded {
+class CoffeeShiftViewController: UIViewController, Storyboarded, UpdateViewProtocol {
   
   var viewModel: CoffeeShiftsViewModel?
   var coordinator: CreateShiftCoordinator?
@@ -18,6 +18,10 @@ class CoffeeShiftViewController: UIViewController, Storyboarded {
     super.viewDidLoad()
     tableView.register(cellType: CoffeeShiftCell.self)
     navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Shift", style: .done, target: self, action: #selector(addShift))
+    updateView(viewModel!)
+  }
+  
+  func updateView(_ model: CoffeeShiftsViewModel) {
     viewModel?.updateUI = { [weak self] in
       guard let self = self, let viewModel = self.viewModel else { return }
       self.title = viewModel.title
@@ -31,7 +35,7 @@ class CoffeeShiftViewController: UIViewController, Storyboarded {
   }
   
   private func configureTableView() {
-    adapter.cellHeight = 55.0
+    adapter.cellHeight = 40.0
     tableView.delegate = adapter
     tableView.dataSource = adapter
     tableView.layer.cornerRadius = 0
