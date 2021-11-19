@@ -46,27 +46,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-mn-r6D">
-                                <rect key="frame" x="20" y="64" width="374" height="244"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-mn-r6D">
+                                <rect key="frame" x="20" y="64" width="374" height="737"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aG-6P-JiB">
-                                        <rect key="frame" x="12" y="12" width="76" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="12" y="12" width="71" height="95"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-K1-kGT">
-                                        <rect key="frame" x="12" y="67" width="350" height="55"/>
+                                        <rect key="frame" x="12" y="115" width="334" height="95"/>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za2-cM-LDm">
-                                        <rect key="frame" x="12" y="122" width="67.5" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="12" y="218" width="64" height="95"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Ays-1E-Gal">
-                                        <rect key="frame" x="12" y="177" width="350" height="55"/>
+                                        <rect key="frame" x="12" y="321" width="334" height="95"/>
                                     </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Employee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wn-zd-C7E">
+                                        <rect key="frame" x="12" y="424" width="120.5" height="95"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftY-RO-PeA">
+                                        <rect key="frame" x="12" y="527" width="81.5" height="95"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgY-2S-mev">
+                                        <rect key="frame" x="12" y="630" width="89" height="95"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <edgeInsets key="layoutMargins" top="12" left="12" bottom="12" right="12"/>
                             </stackView>
@@ -80,7 +98,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="colorLabel" destination="BgY-2S-mev" id="XLD-Uh-5dD"/>
+                        <outlet property="empolyeeLabel" destination="3wn-zd-C7E" id="emt-IZ-qOD"/>
                         <outlet property="endDatePicker" destination="Ays-1E-Gal" id="JQM-Pd-9WO"/>
+                        <outlet property="roleLabel" destination="ftY-RO-PeA" id="Atb-mb-WCS"/>
                         <outlet property="startDatePicker" destination="jYH-K1-kGT" id="fGD-oN-dyI"/>
                     </connections>
                 </viewController>
